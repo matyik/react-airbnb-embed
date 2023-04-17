@@ -1,5 +1,5 @@
 {
-  "name": "react-airbnb-embed",
+  "name": "@matyik/react-airbnb-embed",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/matyik"
   },
