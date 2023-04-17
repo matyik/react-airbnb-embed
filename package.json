@@ -1,7 +1,7 @@
 {
   "name": "react-airbnb-embed",
   "publishConfig": {},
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple React component for embedding an Airbnb listing.",
   "scripts": {
     "rollup": "rollup -c"
