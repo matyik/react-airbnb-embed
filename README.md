@@ -1,6 +1,6 @@
 # react-airbnb-embed
 
-[![NPM](https://img.shields.io/npm/v/react-airbnb-embed.svg)](https://www.npmjs.com/package/react-airbnb-embed) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)![GitHub stars](https://img.shields.io/github/stars/matyik/react-airbnb-embed?style=social)
+[![NPM](https://img.shields.io/npm/v/react-airbnb-embed.svg)](https://www.npmjs.com/package/react-airbnb-embed) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![GitHub stars](https://img.shields.io/github/stars/matyik/react-airbnb-embed?style=social)]
 
 A React component that allows you to embed an Airbnb listing in your web application.
 
@@ -31,9 +31,9 @@ export default MyComponent
 
 The Airbnb component accepts the following props:
 
-- id (required): The ID of the Airbnb listing that you want to embed.
-- reviews (optional, default true): Whether to show or hide the reviews section.
-- nofollow (optional, default false): Whether to add the nofollow attribute to the links.
+- `id` (required): The ID of the Airbnb listing that you want to embed.
+- `reviews` (optional, default true): Whether to show or hide the reviews section.
+- `nofollow` (optional, default false): Whether to add the nofollow attribute to the links.
 
 ## License
 

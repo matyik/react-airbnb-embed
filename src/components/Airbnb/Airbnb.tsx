@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export interface AirbnbProps {
   id: string
@@ -7,6 +7,13 @@ export interface AirbnbProps {
 }
 
 const Airbnb = ({ id, reviews = true, nofollow = false }: AirbnbProps) => {
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://www.airbnb.com/embeddable/airbnb_jssdk'
+    script.async = true
+    document.body.appendChild(script)
+  }, [])
+
   return (
     <div
       className='airbnb-embed-frame'
@@ -24,9 +31,6 @@ const Airbnb = ({ id, reviews = true, nofollow = false }: AirbnbProps) => {
         rel={nofollow ? 'nofollow' : ''}>
         Invisible House Joshua Tree | Modern Masterpiece
       </a>
-      <script
-        async
-        src='https://www.airbnb.com/embeddable/airbnb_jssdk'></script>
     </div>
   )
 }
