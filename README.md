@@ -1,6 +1,6 @@
 # react-airbnb-embed
 
-[![NPM](https://img.shields.io/npm/v/react-airbnb-embed.svg)](https://www.npmjs.com/package/react-airbnb-embed) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![GitHub stars](https://img.shields.io/github/stars/matyik/react-airbnb-embed?style=social)]
+[![NPM](https://img.shields.io/npm/v/react-airbnb-embed.svg)](https://www.npmjs.com/package/react-airbnb-embed) [![GitHub stars](https://img.shields.io/github/stars/matyik/react-airbnb-embed?style=social)](https://github.com/matyik/react-airbnb-embed) ![NPM Downloads](https://img.shields.io/npm/dw/react-airbnb-embed)
 
 A React component that allows you to embed an Airbnb listing in your web application.
 
