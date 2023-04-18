@@ -2,11 +2,25 @@ import React, { useEffect } from 'react'
 
 export interface AirbnbProps {
   id: string
+  name: string
   reviews: boolean
   nofollow: boolean
 }
 
-const Airbnb = ({ id, reviews = true, nofollow = false }: AirbnbProps) => {
+export interface LinksProps {
+  id: string
+  name: string
+  nofollow: boolean
+}
+
+const AirbnbStyle = { width: 450, height: 300, margin: 'auto' }
+
+const Airbnb = ({
+  id,
+  name,
+  reviews = true,
+  nofollow = false,
+}: AirbnbProps) => {
   useEffect(() => {
     const script = document.createElement('script')
     script.src = 'https://www.airbnb.com/embeddable/airbnb_jssdk'
@@ -15,12 +29,32 @@ const Airbnb = ({ id, reviews = true, nofollow = false }: AirbnbProps) => {
   }, [])
 
   return (
-    <div
-      className='airbnb-embed-frame'
-      data-id={id}
-      data-view='home'
-      data-hide-reviews={!reviews}
-      style={{ width: 450, height: 300, margin: 'auto' }}>
+    <>
+      {reviews ? (
+        <div
+          className='airbnb-embed-frame'
+          data-id={id}
+          data-view='home'
+          style={AirbnbStyle}>
+          <Links id={id} nofollow={nofollow} name={name} />
+        </div>
+      ) : (
+        <div
+          className='airbnb-embed-frame'
+          data-id={id}
+          data-view='home'
+          data-hide-reviews
+          style={AirbnbStyle}>
+          <Links id={id} nofollow={nofollow} name={name} />
+        </div>
+      )}
+    </>
+  )
+}
+
+const Links = ({ id, name, nofollow }: LinksProps) => {
+  return (
+    <>
       <a
         href={`https://www.airbnb.com/rooms/${id}?source=embed_widget`}
         rel={nofollow ? 'nofollow' : ''}>
@@ -29,9 +63,9 @@ const Airbnb = ({ id, reviews = true, nofollow = false }: AirbnbProps) => {
       <a
         href={`https://www.airbnb.com/rooms/${id}?source=embed_widget`}
         rel={nofollow ? 'nofollow' : ''}>
-        Invisible House Joshua Tree | Modern Masterpiece
+        {name}
       </a>
-    </div>
+    </>
   )
 }
 

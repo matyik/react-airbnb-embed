@@ -21,7 +21,7 @@ import React from 'react'
 import { Airbnb } from 'react-airbnb-embed'
 
 const MyComponent = () => {
-  return <Airbnb id='123456' reviews={true} nofollow={false} />
+  return <Airbnb id='123456' name='Listing' />
 }
 
 export default MyComponent
@@ -32,6 +32,7 @@ export default MyComponent
 The Airbnb component accepts the following props:
 
 - `id` (required): The ID of the Airbnb listing that you want to embed.
+- `name` (required): The name of the Airbnb listing that you want to embed.
 - `reviews` (optional, default true): Whether to show or hide the reviews section.
 - `nofollow` (optional, default false): Whether to add the nofollow attribute to the links.
 
