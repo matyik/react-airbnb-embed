@@ -27,6 +27,8 @@ const MyComponent = () => {
 export default MyComponent
 ```
 
+<img width="400px" height="auto" src="https://github.com/matyik/react-airbnb-embed/raw/main/screenshot.png">
+
 ## Props
 
 The Airbnb component accepts the following props:
