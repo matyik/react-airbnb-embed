@@ -2,7 +2,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-airbnb-embed.svg)](https://www.npmjs.com/package/react-airbnb-embed) [![GitHub stars](https://img.shields.io/github/stars/matyik/react-airbnb-embed?style=social)](https://github.com/matyik/react-airbnb-embed) ![NPM Downloads](https://img.shields.io/npm/dw/react-airbnb-embed)
 
-A React component that allows you to embed an Airbnb listing in your web application.
+A React component that allows you to embed an Airbnb listing in your web application. Compatible with server-side rendering using Next.js.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Once installed, you can use the `Airbnb` component by importing it in your code 
 
 ```javascript
 import React from 'react'
-import Airbnb from 'react-airbnb-embed'
+import { Airbnb } from 'react-airbnb-embed'
 
 const MyComponent = () => {
   return <Airbnb id='123456' reviews={true} nofollow={false} />
